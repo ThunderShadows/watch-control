@@ -1,0 +1,26 @@
+Watch Coach
+===========
+
+This program is free software under the GNU Affero General Public License
+version 3 (or, at your option, any later version). See the file LICENSE.
+
+GloryFit / UTE protocol
+-----------------------
+Watch Sync talks to GloryFit- and UTE-family watches using command opcodes,
+record layouts, and fetch/handshake behaviour adapted from Gadgetbridge's
+GloryFit support:
+
+  https://codeberg.org/Freeyourgadget/Gadgetbridge
+  app/src/main/java/nodomain/freeyourgadget/gadgetbridge/service/devices/gloryfit/
+
+Gadgetbridge is copyright its contributors, including José Rebelo (2025),
+and is licensed under the GNU Affero General Public License v3.0.
+
+The UTE command dialect (writes to 0x34F1, opcodes such as EB for steps and
+EC for sleep) is documented in Gadgetbridge issue #5505 and in the
+Gadgetbridge-tools GloryFit dissector:
+
+  https://codeberg.org/Freeyourgadget/Gadgetbridge/issues/5505
+  https://codeberg.org/Freeyourgadget/Gadgetbridge-tools/src/branch/main/gloryfit
+
+Those sources are also AGPL-3.0.
